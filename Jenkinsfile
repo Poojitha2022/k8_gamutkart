@@ -4,7 +4,7 @@ pipeline {
 	stage("Checkout") {
       steps {
         sh 'git clone https://github.com/Poojitha2022/k8_gamutkart.git'
-	    sh 'cd K8s_gamukart'
+	    sh 'cd k8_gamutkart'
       }
 	}
 	stage("build ") {
