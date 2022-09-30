@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gamukart-deployment
+  labels:
+    app: gamukartapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gamukartapp
+  template:
+    metadata:
+      labels:
+        app: gamukartapp
+    spec:
+      containers:
+      - name: gamukart
+        image: gvsiva2008/gamukart:v.1
+        ports:
+        - containerPort: 80
