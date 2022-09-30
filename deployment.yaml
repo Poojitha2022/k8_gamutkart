@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: gamukart
-        image: gvsiva2008/gamukart:v.1
+        image: poojitha2022/gamukart:latest
         ports:
         - containerPort: 80
